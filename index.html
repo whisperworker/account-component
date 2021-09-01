@@ -1,0 +1,142 @@
+<!--53:37-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Site</title>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col l10">
+                    <h1 class="site-title left-align">My project</h1>
+                </div>
+                <div class="col l2">
+                    <button class="modal-show waves-effect waves-light btn" data-modal="#sign-up">Sign Up</button>
+                    <button class="modal-show waves-effect waves-light btn" data-modal="#log-in">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal-wrap hide" id="sign-up"><!--sign-up-->
+        <div class="modal-project sign-up-modal">
+            <div class="form-slider-wrapper"> <!--Form Slider-->
+                <div class="form-slider">
+                    <div class="left-50">
+                        <form><!--Sign up form-->
+                            <div class="row">
+                                <div class="input-field col l12">
+                                    <input placeholder="Your name" name="name" id="signup-name" type="text" class="validate">
+                                    <label for="signup-name">Name</label>
+                                </div>
+                                <div class="input-field col l12">
+                                    <input name="pass" id="signup-pass" type="password" class="validate">
+                                    <label for="signup-pass">Password</label>
+                                </div>
+                                <div class="input-field col l12">
+                                    <input placeholder="Your email" name="email" id="signup-email" type="email" class="validate">
+                                    <label for="signup-email">Email</label>
+                                </div>
+                                <div class="input-field col l6">
+                                    <input placeholder="Your birthday" id="signup-birthday" type="text" class="datepicker">
+                                    <label class="active" for="signup-birthday">Birthday</label>
+                                </div>
+                                <div class="col l6">
+                                    <p>
+                                        <label>
+                                            <input name="sex" type="radio" value="male"/>
+                                            <span>Male</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="sex" type="radio" value="female"/>
+                                            <span>Female</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input name="sex" type="radio" value="other"/>
+                                            <span>Other</span>
+                                        </label>
+                                    </p>
+                                </div><!--Radio-->
+                                <div class="col l6">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" id="agree-rules"/>
+                                            <span>Agree rules</span>
+                                        </label>
+                                    </p>
+                                </div>
+                                <div class="col l6">
+                                    <p class="read-rules">
+                                        (read rules)
+                                    </p>
+                                </div>
+                                <div class="col l12 right-align">
+                                    <button id="signup-submit" class="waves-effect waves-light btn disabled">Sign Up</button>
+                                </div>
+                            </div><!--Row-->
+                        </form><!--Sign up form-->
+                        <button class="modal-project-close btn-floating waves-effect waves-light #ff5252 red accent-2">
+                            <i class="material-icons">close</i>
+                        </button>
+                    </div>
+                    <div class="right-50">
+                        <div class="top-rules-back">
+                            <i class="material-icons">keyboard_backspace</i>
+                        </div>
+                        <p class="text-rules">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        <div class="bottom-rules-back">
+                            <i class="material-icons">keyboard_backspace</i>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--Form Slider-->
+
+        </div>
+    </div><!--sign-up-->
+
+    <div class="modal-wrap hide" id="log-in"><!--log-in-->
+        <div class="modal-project">
+            <!--Login form-->
+            <form>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Your email" name="email" id="login-email" type="text" class="validate">
+                        <label for="login-email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input name="pass" id="login-pass" type="password">
+                        <label for="login-pass">Password</label>
+                    </div>
+                    <div class="col l12 right-align">
+                        <button id="login-submit" class="waves-effect waves-light btn">
+                            <i class="material-icons right">login</i>Login
+                        </button>
+                    </div>
+                </div>
+            </form><!--Login form-->
+            <button class="modal-project-close btn-floating waves-effect waves-light #ff5252 red accent-2">
+                <i class="material-icons">close</i>
+            </button>
+        </div>
+    </div><!--log-in-->
+
+
+
+    <script src="js/materialize.min.js"></script>
+    <script src="script/ajax.js"></script>
+    <script src="script/login_ajax.js"></script>
+    <script src="script/signup_ajax.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>

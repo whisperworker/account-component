@@ -1,0 +1,97 @@
+.user-cabinet-header {
+    font-size: 20px;
+}
+
+.site-header {
+    border-bottom: 1px solid #26a69a;
+    padding: 25px;
+}
+
+.site-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.login-header {
+    font-size: 20px;
+}
+
+/*Login modal window*/
+.modal-wrap {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.modal-project {
+    position: relative;
+    width: 365px;
+    border: 1px solid #26a69a;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px #4b4649;
+    padding: 10px;
+    background: #fff;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.modal-project-close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+
+
+/*Rules sign up slider form*/
+.form-slider {
+    width: 700px;
+    height: 340px;
+    margin-left: 0;
+    transition: all ease 1s;
+}
+
+.left-50, .right-50  {
+    width: 50%;
+    min-height: 50px;
+    float: left;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.right-50 {
+    min-height: 50px;
+    max-height: 470px;
+    overflow-y: scroll;
+    position: relative;
+    top: 20px;
+}
+
+.text-rules {
+    text-align: justify;
+    margin: 10px 10px;
+}
+
+.read-rules, .top-rules-back, .bottom-rules-back {
+    cursor: pointer;
+}
+
+/*sign-up div style*/
+.sign-up-modal {
+    width: 365px;
+    height: 550px;
+}
+
+.form-slider-wrapper {
+    overflow: hidden;
+}
